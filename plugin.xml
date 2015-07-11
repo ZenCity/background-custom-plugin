@@ -12,6 +12,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <repo>https://github.com/ZenCity/background-custom-plugin</repo>
     <issue>https://github.com/ZenCity/background-custom-plugin/issues</issue>
 
+    <dependency id="com.google.android.gms:play-services:7.5.0"/>
+
     <!-- android -->
     <platform name="android">
 
