@@ -25,7 +25,7 @@ import com.google.android.gms.location.LocationServices;
  *
  */
 
-public class CordovaLocationServices extends CordovaPlugin implements
+public class BackgroundLocationPlugin extends CordovaPlugin implements
 		GoogleApiClient.ConnectionCallbacks {
 
 	public static final String ACTION_START = "start";
