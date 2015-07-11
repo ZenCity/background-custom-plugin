@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="com.zencity.cordova.backgroundlocation"
+      version="0.0.1">
+
+    <name>Google Location Services Plugin</name>
+    <description>Geolocation plugin using Google Play Services Location API & IOS.</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,geolocation,google-play-services</keywords>
+    <repo>https://github.com/ZenCity/background-custom-plugin</repo>
+    <issue>https://github.com/ZenCity/background-custom-plugin/issues</issue>
+
+    <!-- android -->
+    <platform name="android">
+
+        <js-module src="www/Coordinates.js" name="Coordinates">
+            <clobbers target="Coordinates" />
+        </js-module>
+
+        <js-module src="www/PositionError.js" name="PositionError">
+            <clobbers target="PositionError" />
+        </js-module>
+
+        <js-module src="www/Position.js" name="Position">
+            <clobbers target="Position" />
+        </js-module>
+
+        <js-module src="www/LocationServices.js" name="LocationServices">
+            <clobbers target="window.LocationServices" />
+        </js-module>
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="LocationServices">
+                <param name="android-package" value="com.zencity.cordova.backgroundlocation"/>
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        </config-file>
+
+        <source-file src="platforms/android/CordovaLocationListener.java" target-dir="src/com/zencity/cordova/backgroundlocation" />
+        
+        <source-file src="platforms/android/BackgroundLocationPlugin.java" target-dir="src/com/zencity/cordova/backgroundlocation" />
+        
+        <source-file src="platforms/android/GApiUtils.java" target-dir="src/com/zencity/cordova/backgroundlocation" />
+        
+        <source-file src="platforms/android/LocationServiceErrorMessages.java" target-dir="src/com/zencity/cordova/backgroundlocation" />
+        
+        <source-file src="platforms/android/Constants.java" target-dir="src/com/zencity/cordova/backgroundlocation" />
+
+    </platform>
+</plugin>
