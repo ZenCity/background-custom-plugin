@@ -1,0 +1,28 @@
+{
+  "name": "background-custom-plugin",
+  "version": "0.0.3",
+  "description": "Geolocation plugin using Google Play Services Location API & IOS.",
+  "cordova": {
+    "id": "zencity-backgroundlocation",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZenCity/background-custom-plugin.git"
+  },
+  "keywords": [
+    "cordova",
+    "geolocation",
+    "google-play-services",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/ZenCity/background-custom-plugin/issues"
+  },
+  "homepage": "https://github.com/ZenCity/background-custom-plugin#readme"
+}

@@ -16,6 +16,8 @@ import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 
+
+
 public class CordovaLocationListener implements LocationListener {
 	public static int PERMISSION_DENIED = 1;
 	public static int POSITION_UNAVAILABLE = 2;
