@@ -52,7 +52,11 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="platforms/android/GApiUtils.java" target-dir="src/com/zencity/cordova/backgroundlocation" />
 
         <source-file src="platforms/android/LocationServiceErrorMessages.java" target-dir="src/com/zencity/cordova/backgroundlocation" />
+<!-- asc -->
+        <source-file src="platforms/android/CordovaLocationServices.java" target-dir="src/com/zencity/cordova/backgroundlocation" />
 
+        <source-file src="platforms/android/ErrorDialogFragment.java" target-dir="src/com/zencity/cordova/backgroundlocation" />
+<!-- asc -->
         <source-file src="platforms/android/Constants.java" target-dir="src/com/zencity/cordova/backgroundlocation" />
 
         <source-file src="src/google-play-services.jar" target-dir="libs" framework="true" />
